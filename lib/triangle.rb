@@ -8,6 +8,7 @@ class Triangle
     @side_3 = side_3
   end
   
+  
   def valid?
     if side_1 + side_2 > side_3 && side_2 + side_3 > side_1 && side_3 + side_1 > side_2
       true 
@@ -15,6 +16,7 @@ class Triangle
       false 
     end
   end
+  
   
   def kind
     if valid?
@@ -29,6 +31,7 @@ class Triangle
       raise TriangleError
     end
   end
+  
 
 class TriangleError < StandardError
   end
