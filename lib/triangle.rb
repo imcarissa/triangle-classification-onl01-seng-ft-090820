@@ -17,22 +17,21 @@ class Triangle
   end
   
   def kind
-    if side_1 == side_2 && side_2 == side_3
-      :equilateral
-    elsif side_1 == side_2 || side_2 == side_3 || side_1 == side_3
-      :isosceles
+    if valid?
+      if side_1 == side_2 && side_2 == side_3
+        :equilateral
+      elsif side_1 == side_2 || side_2 == side_3 || side_1 == side_3
+        :isosceles
+      else
+        :scalene
+    end
     else
-      :scalene
-  end
-  else
-    raise TriangleError
+      raise TriangleError
+    end
   end
 end
 
 class Triangle < StandardError
   def message
     "This is not a triangle."
-  end
-end
-
 end
