@@ -27,5 +27,12 @@ class Triangle
   else
     raise TriangleError
   end
-  
+end
+
+class Triangle < StandardError
+  def message
+    "This is not a triangle."
+  end
+end
+
 end
