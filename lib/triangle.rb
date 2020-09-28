@@ -31,5 +31,5 @@ class Triangle
   end
 
 class Triangle < StandardError
-
+  end
 end
