@@ -30,6 +30,6 @@ class Triangle
     end
   end
 
-class Triangle < StandardError
+class TriangleError < StandardError
   end
 end
