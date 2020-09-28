@@ -24,7 +24,7 @@ class Triangle
         :isosceles
       else
         :scalene
-    end
+      end
     else
       raise TriangleError
     end
@@ -34,4 +34,6 @@ class Triangle < StandardError
   def message
     "This is not a triangle."
   end
+end
+
 end
