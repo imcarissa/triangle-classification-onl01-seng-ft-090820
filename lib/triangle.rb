@@ -29,5 +29,3 @@ class Triangle
   end
   
 end
-
-class Triang
